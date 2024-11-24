@@ -1,0 +1,119 @@
+ /* Centering the search bar */
+ 
+   /* Main container for search page */
+ /* Main container */
+.Search {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    min-height: 100vh; /* Full page height */
+    overflow-x: hidden;
+  }
+  
+  /* Search bar container */
+  .Input_handlers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Search input field */
+  .Input_handlers input {
+    width: 50%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background-color: #333;
+    color: white;
+  }
+  
+  .Input_handlers input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Search button */
+  .button_search button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button_search button:hover {
+    background-color: #b00810;
+  }
+  
+  /* Grid for videos */
+  .data_handling {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 5 videos per row */
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 10px;
+    overflow-y: auto; /* Scrollable */
+  }
+  
+  /* Video card */
+  .Videos_serached {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+  }
+  
+  .Videos_serached:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Thumbnail styling */
+  .Videos_serached iframe {
+    width: 100%;
+    height: 160px; /* Adjust height */
+    border: none;
+  }
+  
+  /* Video details */
+  .Serached_data {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .Serached_data h1 {
+    font-size: 14px;
+    color: white;
+    margin: 10px 0;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .data_handling {
+      grid-template-columns: repeat(3, 1fr); /* 3 videos per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .data_handling {
+      grid-template-columns: repeat(2, 1fr); /* 2 videos per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .data_handling {
+      grid-template-columns: 1fr; /* 1 video per row */
+    }
+  }
+  
