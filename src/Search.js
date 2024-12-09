@@ -3,7 +3,7 @@ import "./search.css"
 const Search = () => {
   const [search,Setsearch]=useState("");
   const [click4,setClick4]=useState(false);
-  const API_KEY = "AIzaSyCbogx9khtIzPZPHthhGspBQRCflVedwR8";
+  const API_KEY = "your api key";
   const [Array,setArray]=useState([]);
   useEffect(()=>
   {
