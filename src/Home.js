@@ -5,7 +5,7 @@ import { useContext } from "react";
 import "./Home.css";
 
 const Home = () => {
-  const API_KEY = "AIzaSyCbogx9khtIzPZPHthhGspBQRCflVedwR8";
+  const API_KEY = "your api key";
   const [click2, setClick2] = useState(false);
   const [savedata, setdata] = useState([]);
   const {
