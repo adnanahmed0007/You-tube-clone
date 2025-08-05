@@ -58,7 +58,7 @@ const Home = () => {
       ) : (
         <div>
           <h1 className="not_access">
-            Please login to access to watch Youtube First
+            Please Click
           </h1>
         </div>
       )}
@@ -67,6 +67,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 
