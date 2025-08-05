@@ -3,7 +3,7 @@ import "./search.css"
 const Search = () => {
   const [search,Setsearch]=useState("");
   const [click4,setClick4]=useState(false);
-  const API_KEY = "your api key";
+  const API_KEY = "AIzaSyA3ERy9RwhzLB5DFd3bsNiD9in4TIY6TOI";
   const [Array,setArray]=useState([]);
   useEffect(()=>
   {
@@ -68,3 +68,4 @@ const Search = () => {
 }
 
 export default Search
+
