@@ -38,7 +38,7 @@ const Home = () => {
       </div>
 
       <button onClick={() => setClick2(!click2)}>Click</button>
-      {Email&&Password && click2 ? (
+      { click2 ? (
         <div className="videos-container">
           {savedata && savedata.length > 0
             ? savedata.map((video) => (
@@ -67,5 +67,6 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
