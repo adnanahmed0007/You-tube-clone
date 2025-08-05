@@ -3,9 +3,9 @@ import youtuneImage from "./youtune.png";
 import Mycontext from "./Context";
 import { useContext } from "react";
 import "./Home.css";
-
+ 
 const Home = () => {
-  const API_KEY = "AIzaSyA3ERy9RwhzLB5DFd3bsNiD9in4TIY6TOI";
+  const API_KEY = "AIzaSyDcJZSP5BWjBMmculEJUsDI1GsP1J44Xrg";
   const [click2, setClick2] = useState(false);
   const [savedata, setdata] = useState([]);
   const {
@@ -67,4 +67,5 @@ const Home = () => {
 };
 
 export default Home;
+
 
